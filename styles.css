@@ -1,0 +1,137 @@
+
+/* Image */
+    .image.flush {
+        margin: 0 !important;
+    }
+    .image.fit {
+        display: block;
+        margin: 0 0 2rem 0;
+        width: 100%;
+    }
+        .image.fit img {
+            width: 100%;
+        }
+
+/* Body */
+    body {
+        background-color: #1e1f23;
+        padding-top: 8rem;
+    }
+
+        body.is-loading:after {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        body:after {
+            content: '';
+            background-image: url(images/mostar.webp);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            visibility: visible;
+            opacity: 1;
+        }
+
+/* Header */
+    #header{
+        color: #a6a6a6;
+        cursor: default;
+        position: relative;
+        text-align: center;
+        z-index: 10001;
+      
+    }
+        #header > .title {
+            margin: 0 0 4rem 0;
+            padding: 0;
+  
+        }
+            #header > .title a {
+                font-size: 4rem;
+                font-weight: 700;
+                color: #FFF;
+                text-decoration: none;
+                line-height: 2rem;
+                }
+            #header > .title span {
+                font-weight: 300;
+                font-size: 1rem;
+                display: block;
+                color: rgba(255, 255, 255, 0.65);
+                font-family: fantasy;
+            }
+
+/* Main */
+    #main > .inner {
+        margin: 0 auto;
+        width: 80rem;
+        max-width: 90%;
+        margin-bottom: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+    }
+    .wrap > header {
+        text-align: center;
+        background: #FFF;
+        padding: 2rem;
+        margin: 0;
+        
+    }
+        .wrap > header h1 {
+            position: relative;
+            padding-bottom: .75rem;
+        }
+            .wrap > header h1:after {
+                content: '';
+                position: absolute;
+                margin: auto;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 10%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.125);
+            }
+        .wrap > header p {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: .8rem;
+            letter-spacing: .25rem;
+            margin: 0;
+        }
+        .wrap > header.spec {
+            padding: 4rem 2rem;
+        }
+    .wrap.style .content {
+        padding: 6rem;
+    }
+/* Footer */
+    #footer {
+        padding: 2rem 0 0.1rem 0;
+        text-align: center;
+        background-color: black;
+    }
+        #footer a {
+            color: rgba(255, 255, 255, 0.65);
+        }
+            #footer a:hover {
+                color: seashell;
+            }
+        #footer .copyright {
+            color: slategrey;
+            font-size: 0.9rem;
+            margin: 0 0 2rem 0;
+            padding: 0 1rem;
+            text-align: center;
+        }
+
